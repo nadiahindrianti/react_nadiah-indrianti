@@ -84,7 +84,6 @@ Terdapat beberapa code yang digunakan dalam setting github, seperti git init, gi
 [Screenshot](https://github.com/nadiahindrianti/react_nadiah-indrianti/tree/main/02_Version%20Control%20and%20Branch%20Management%20(Git)/Screenshot)
 
 
-
 ## Used By
 
 Nadiah Indrianti
