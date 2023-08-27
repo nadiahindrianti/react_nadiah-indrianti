@@ -21,41 +21,41 @@ Dalam penggunaan HTML terdapat beberapa kegunaan seperti :
 Terdapat beberapa code dokumentasi HTML 
 
 Dokumentasi dalam HTML5
-bash
+```bash
   <! DOCTYPE html>
-
+```
 
 Elemen root dari halaman HTML
-bash
+```bash
   <html>
-
+```
 
 Berisi informasi meta mengenai dokumen
-bash
+```bash
   <head>
-
+```
 
 Menentukan judul untuk dokumen
-bash
+```bash
   <title>
-
+```
 
 Berisi konten halaman yang terlihat
-bash
+```bash
   <body> 
-
+```
 
 
 Dalam HTML terdapat beberapa tag seperti 
 - tag div
-bash
+```bash
   <div>
     Content HTML
   </div>
-
+```
 
 - tag heading & paragraph
-bash
+```bash
   <h1>Heading Satu</h1>
   <h2>Heading Dua</h2>
   <h3>Heading Tiga</h3>
@@ -63,58 +63,51 @@ bash
   <h5>Heading Lima</h5>
   <h6>Heading Enam</h6>
   <p>Paragraph</p>
-
+```
 
 - tag link
-bash
+```bash
   <a href="https://github.com">
      website github 
   </a>
-
+```
 
 - tag image
-bash
+```bash
   <img src="logo.png"/>
-
+```
 
 - tag table
-bash
+```bash
   <table></table>
   <tr></tr>
   <td></td>
   <th></th>
-
+```
 
 - tag form
-bash
+```bash
   <form></form>
-
+```
 
 Terdapat beberapa styling pada paragraph HTML
-bash
+```bash
   <strong>membuat text lebih tebal</strong>
   <em>penekanan  pada text menjadi italic</em>
   <s>membuat text dengan garis tercoret</s>
   <br/>(line break, untuk membuat garis baru)
-
+```
 
 Selain itu, terdapat beberapa unordered list di HTML seperti: 
 - Untuk menandai item yang tidak berurut
-bash
+```bash
   <ul></ul>
-
+```
 
 - Untuk mengganti simbol dari unordered list
-bash
+```bash
   <ul type="">
-
-
-- Git new branch
-bash
-  git branch name_new_branch
-
-
-
+```
 
 
 
