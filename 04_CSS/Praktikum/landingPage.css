@@ -1,0 +1,247 @@
+:root {
+    --darkBlue: #37517e;
+    --blueLighter: #47b2e4;
+    --baseWhite: #ffffff;
+    --ivory: #f3f5fa;
+    --brown: rgba(255, 255, 255, 0.6);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Header */
+  header > h2 {
+    padding: 15px 10px;
+  }
+  
+  /* Banner Section */
+  .bannerSection {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkBlue);
+  }
+  
+  #bannerImg {
+    width: 636px;
+    height: 527px;
+    margin-left: 25px;
+  }
+  
+  .rightContent > h1 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .rightContent > .text {
+    color: var(--brown);
+    font-size: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .iconGetStart {
+    margin-top: 50px;
+  }
+  
+  .iconGetStart > a:nth-child(1) {
+    width: 147.36px;
+    height: 50px;
+    padding: 9px 28px 12px 28px;
+    border-radius: 50px;
+    background-color: var(--blueLighter);
+    font-style: normal;
+    margin-right: 37px;
+  }
+  
+  .iconGetStart > a:nth-child(1):hover {
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .iconGetStart > a:nth-child(2):hover {
+    text-shadow: 2px 2px 2px var(--ivory);
+  }
+  
+  .iconnewsLetter {
+    height: 239px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ivory);
+  }
+  
+  .iconnewsLetter > h2 {
+    color: var(--darkBlue);
+    font-size: 22px;
+  }
+  
+  .iconnewsLetter > p {
+    color: #444444;
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  
+  .iconSubscribe > input[type="text"] {
+    width: 530px;
+    height: 42px;
+    border-radius: 50px;
+    border: none;
+  }
+  
+  .iconSubscribe > input[type="submit"] {
+    margin-left: -50px;
+    width: 113px;
+    height: 42px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--blueLighter);
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .iconSubscribe > input[type="submit"]:hover {
+    box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Contact */
+  
+  .contact {
+    display: grid;
+    margin: 50px 90px;
+    background-color: #ffffff;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 339.19px;
+  }
+  
+  .contact * {
+    color: #444444;
+  }
+  
+  .contact > .addressContact > h2 {
+    font-size: 28px;
+    color: var(--darkBlue);
+  }
+  
+  .addressContact,
+  .iconlinksMenu,
+  .iconserviceMenu,
+  .iconsocialMedia {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addressContact > h2 {
+    margin-bottom: 10px;
+  }
+  
+  .linksMenu,
+  .iconserviceMenu {
+    padding-left: 30px;
+    margin-top: 12px;
+  }
+  
+  .iconlinksMenu > *,
+  .iconserviceMenu > * {
+    padding: 15px 0;
+  }
+  
+  .iconsocialMedia > h2 {
+    margin-bottom: 15px;
+  }
+  
+  .iconsocialMedia > p {
+    line-height: 23px;
+  }
+  
+  .social-media {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 7.64px;
+  }
+  
+  .social-media > .socialmedia {
+    width: 36px;
+    height: 36px;
+    background-color: var(--blueLighter);
+    /* border: 1px solid; */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon-sosmed {
+    font-size: 23px;
+  }
+  
+  /* Footer */
+  .footer_copyright {
+    background-color: #37517e;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    padding-left: 81px;
+    padding-right: 81px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+  .footer_link {
+    color: #47b2e4;
+    text-decoration: none;
+  }
+  .footer_link:hover {
+    color: #78d3fd;
+  }
+  
+  /* Responsive */
+  
+  @media screen and (max-width: 1048px) {
+    .heroSection {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .heroSection > .rightContent {
+      margin: 40px 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact {
+      grid-template-columns: 1fr 1fr;
+      height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #heroImg {
+      width: 400px;
+      height: 350px;
+    }
+  
+    .subsField > input[type="text"] {
+      width: 300px;
+    }
+  
+    .contact {
+      grid-template-columns: 1fr;
+      row-gap: 25px;
+    }
+  }
