@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <h1>Create Product</h1>
+    <h2>Detail Product</h2>
+    <form>
+        <div class="first">
+            <label for="firstName">Product Name :</label><br>
+            <input maxlength="50" minlength="6" required type="text" id="firstName" name="firstName"><br>
+        </div>
+        <div class="catg">
+            <label for="category">Product Category :</label><br>
+            <select>
+                <option>Electronic devices</option>
+                <option>Clothes</option>
+                <option>Food</option>
+            </select>
+        </div>
+        <form>
+            <label for="">Product Freshness :</label><br>
+            <input required type="radio" id="brand" name="freshness">
+            <label for="brand">Brand New</label><br>
+            <input type="radio" id="sec" name="freshness">
+            <label for="sec">Second Hank</label><br>
+            <input type="radio" id="reff" name="freshness">
+            <label for="reff">Refurbished</label><br>
+        </form>
+        <div>
+            <label for="img">Image of Product</label>
+            <input type="file" name="img" id="" required />
+        </div>
+        <div>
+            <label for="info">Additional Description :</label>
+            <div>
+              <textarea name="" id="" cols="30" rows="10" required></textarea>
+            </div>
+        </div>
+        <div class="productPrice">
+            <label for="prodcutPrice">Product Price :</label><br />
+            <input type="number" name="price" id="productPrice" placeholder="$100" required />
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+  </body>
+</html>
