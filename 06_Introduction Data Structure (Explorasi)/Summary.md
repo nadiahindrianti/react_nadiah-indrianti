@@ -6,7 +6,7 @@ Data adalah cakupan yang merujuk kepada semua type informasi yang tersimpan komp
 
 ## Akses Documentation
 
-[Screenshot](https://github.com/nadiahindrianti/react_nadiah-indrianti/tree/main/06_Introduction%20Data%20Structure%20(Explorasi)/Screenshot)
+[Screenshot](https://github.com/nadiahindrianti/react_nadiah-indrianti/edit/main/06_Introduction%20Data%20Structure%20(Explorasi)/Screenshot)
 
 
 ## Used By
