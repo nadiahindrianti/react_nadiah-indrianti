@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Product Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white bg-primary rounded" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary">FaQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo and title section -->
+    <div class="text-center mt-5">
+        <img src="./img/Bootstrap_logo.png" width="50px" alt="">
+        <h1>Create Product</h1>
+        <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a
+            <br>
+            validation state that can be triggered by attempting to submit the form without completing it.
+        </p>
+    </div>
+
+    <!-- form section -->
+    <div class="container d-grid col-5 mt-5">
+        <form action="" method="post" onsubmit="return validate()">
+            <div class="row">
+                <div class="col">
+                    <h3 class="fw-semibold">Detail Form</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 position-relative">
+                    <label for="productName" class="fw-semibold">Product Name</label>
+                    <input type="text" id="productName" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <label for="" class="fw-semibold">Product Category</label>
+                <div class="col-5 position-relative">
+                    <select class="form-select" id="productCategory">
+                        <option value="">Choose</option>
+                        <option value="electronic">Electronic devices</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="food">Food</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-5 position-relative">
+                    <label class="form-label fw-semibold" for="customFile">Image of product</label>
+                    <input type="file" class="form-control" id="uploadFile" />
+                </div>
+            </div>
+            <div class="row mt-3">
+                <label for="" class="fw-semibold">Product Freshness</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="productfreshnessButton" id="flexproductfreshnessDefault1">
+                    <label class="form-check-label" for="flexproductfreshnessDefault1">
+                        Brand New
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="productfreshnessButton" id="flexproductfreshnessDefault2">
+                    <label class="form-check-label" for="flexproductfreshnessDefault2">
+                        Second Hand
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="productfreshnessButton" id="flexproductfreshnessDefault3">
+                    <label class="form-check-label" for="flexproductfreshnessDefault3">
+                        Refufbished  
+                    </label>
+                </div>
+            </div>
+            <div class="form-group mt-3 position-relative">
+                <label for="exampleFormControlTextarea1">Additional Description</label>
+                <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+            <div class="form-outline mx-auto mt-3 position-relative">
+                <label class="form-label" for="typeNumber">Product Price</label>
+                <input type="number" id="productPrice" placeholder="$100" class="form-control" />
+
+            </div>
+            <div class="d-grid p-4 mt-5 mx-auto">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+    <!--Javascript-->
+    <script>
+        function validate() {
+            var productName = document.getElementById("productName").value
+            var productPrice = document.getElementById("productPrice").value
+            var productCategory = document.getElementById("productCategory").value
+            var uploadFile = document.getElementById("uploadFile").files[0]
+            var description = document.getElementById("description").value
+            var productfreshnessButton = document.getElementsByName("productfreshnessButton");
+            var productfreshnessBtn
+
+            for (var i = 0; i < productfreshnessButton.length; i++) {
+                if (productfreshnessButton[i].checked == true) {
+                    productfreshnessBtn = true;
+                }
+            }
+
+
+            if (productName.length > 25) {
+                alert("Product Name tidak boleh melebihi 25 karakter")
+                document.getElementById('productName').style.borderColor = "red";
+            } else if (productName.length > 10) {
+                alert("Last Name must not exceed 25 characters.")
+                document.getElementById('productName').style.borderColor = "red";
+            } else if (productName.length < 1) {
+                alert("Please enter a valid Product name.")
+                document.getElementById('productName').style.borderColor = "red";
+            } else if (productName.includes("{") ||
+                productName.includes("}") ||
+                productName.includes("@") ||
+                productName.includes("/") ||
+                productName.includes("#")) {
+                alert("Name must not contain symbols.")
+                document.getElementById('productName').style.borderColor = "red";
+            }
+            if (productPrice.length == "") {
+                alert("Please enter a valid Product price.")
+                document.getElementById('productPrice').style.borderColor = "red";
+            }
+
+            if (productCategory === "") {
+                alert("The product category field must be filled in")
+                document.getElementById('productCategory').style.borderColor = "red";
+            }
+
+            if (!uploadFile) {
+                alert("The upload file field must be filled in")
+                document.getElementById('uploadFile').style.borderColor = "red";
+            }
+
+            if (!productfreshnessBtn) {
+                alert("The product freshness field must be filled in");
+                document.getElementById('producfreshness').style.borderColor = "red";
+                return false;
+            }
+
+            if (description.length < 1) {
+                alert("The additional descrription field must be filled in")
+                document.getElementById('description').style.borderColor = "red";
+            }
+
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
