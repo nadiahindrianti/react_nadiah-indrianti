@@ -13,7 +13,7 @@ Dalam set up development environment, diperlukan beberapa tools seperti browser,
 
 ## Akses Documentation
 
-[Screenshot](https://github.com/nadiahindrianti/react_nadiah-indrianti/tree/main/04_CSS/Screenshot)
+[Screenshot](https://github.com/nadiahindrianti/react_nadiah-indrianti/tree/main/08_Introduction%20React/Screenshot)
 
 
 ## Used By
