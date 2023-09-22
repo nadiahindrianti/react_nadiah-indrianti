@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar-collapse">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #101728;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo.jpg" width="60" height="45"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>    
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+          <!-- end of navbar -->
+          
+    <!-- hero -->
+    <div class="container-fluid hero">
+      <div class="text-light heroContent">
+        <h5 class="heroTitle">LabTro</h5>
+        <h2 class="">Laboratorium Website.</h2>
+        <p class="lh-lg">
+            This is the Telecommunication Systems Laboratory Website. This website was created by Nadiah Indrianti project for assignments
+        </p>
+        <button type="button" class="btn btn-light">Contact Us</button>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact container-fluid bg-white text-dark">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
+          <h4>Contact Us</h4>
+          <form action="" onsubmit="click()">
+            <div class="input-group">
+                <div>
+                  <label for="firstName">First Name*</label>
+                  <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="ml-3">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName">
+                </div>
+              </div>
+              <div class="col-xs-6 mt-3">
+                <label for="email">Email*</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="col-xs-6 mt-3">
+                <label for="desc">What can we help you with?</label>
+                <textarea class="form-control" name="" id="desc" rows="3"></textarea>
+              </div>
+              <div class="mt-3">
+                <button class="btn-lg text-dark text-bold w-25" style="background: #ffffff;
+                border: 5px solid #101728;
+                border-radius: 20px; font-weight: 500;" type="submit">Submit</button>
+              </div>
+            </form>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="grid-container">
+            <div class="grid-item-one">
+                <div class="col"></div>
+                <h2>LabTro</h2>
+                <p>Cirebon, Jawa Barat</p>
+                    <p><b>Phone:</b>+1 5589 55488 55<p>
+                    <p><b>Email: </b>nadiahindrianti271@gmail.com<p>
+            </div>
+            <div class="grid-item-two">
+                <h2>Useful Links</h2>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Product</a></p>
+                <p><a href="#">About us</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+            <div class="grid-item-three">
+                <h2>Our Service</h2>
+                <p>Elektronika Equipment</p>
+                <p>Practical Module</p>
+                <p>Lab Elektro</p>
+            </div>
+            <div class="grid-item-four">
+                <h2>Social Media</h2>
+                <p>Follow my social media</p>
+                <div class="social-media">
+                  <a href="https://www.instagram.com/nadiahindrianti" target="_blank"><img src="./img/instagram.svg" alt="" /></a>
+                  <a href="https://www.linkedin.com/in/nadiah-indrianti" target="_blank"><img src="./img/linkedin.svg" alt="" /></a>
+                  <a href="https://www.youtube.com/channel/UCVKkJWFcoCAl4j5o-nQ9KvA" target="_blank"><img src="./img/youtube.svg" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-down">
+        <p style="margin-right: auto; margin-left: 80px;">&copy; Copyright <b>LabTro</b>. All Rights Reserved</p>
+        <p style="margin-left: auto; margin-right: 80px;">Designed by Nadiah Indrianti</p>
+    </div>
+    <script src="https://kit.fontawesome.com/fd4206fce4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+  
+        $("button").click(function(){
+          var firstName = $('#firstName').val();
+          var lastName = $('#lastName').val();
+          var email = $('#email').val();
+          var desc = $('#desc').val();
+  
+          alert('First Name = ' + firstName + '\n\n Last Name = ' + lastName + '\n\n Email = ' + email + '\n\n Description = ' + desc );
+        })
+      })
+    </script>
+</body>
+</html>

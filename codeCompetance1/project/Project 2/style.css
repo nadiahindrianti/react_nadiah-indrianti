@@ -1,0 +1,150 @@
+
+.hero {
+  background-image: url(Home.png);
+}
+
+.heroTitle {
+  color: #fcfafd;
+}
+
+.heroContent {
+  padding-top: 100px;
+  width: 50%;
+  padding-bottom: 180px;
+  margin-left: 40px;
+}
+
+.heroContent button {
+  border-color: #0019fa;
+}
+.heroContent button:hover {
+  background-color: #0019fa;
+  color: #fff;
+  border-color: #fff;
+}
+
+.contact {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.logo {
+  width: 20%;
+}
+
+.logoNavbar {
+  width: 7%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.grid-item-one{
+    position: relative;
+    margin-top: -10px;
+}
+
+.grid-item-one p{
+    max-width: 60%;
+    color: #5E5E5E;
+    position: relative;
+    font-size: 14px;
+}
+
+.grid-item-one h2{
+    color: #37517E;
+    position: relative;
+    font-size: 28px;
+}
+
+.grid-item-two{
+    position: relative;
+}
+
+.grid-item-two h2{
+    color: #37517E;
+    font-size: 16px;
+}
+
+.grid-item-two p a{
+    color: #5E5E5E;
+    text-decoration: none;
+}
+
+.grid-item-three{
+    position: relative;
+}
+
+.grid-item-three h2{
+    color: #37517E;
+    font-size: 16px;
+}
+
+.grid-item-three p{
+    color: #5E5E5E;
+}
+
+.grid-item-four{
+    position: relative;
+}
+
+.grid-item-four h2{
+    color: #37517E;
+    font-size: 16px;
+}
+
+.grid-item-four p{
+    color: #5E5E5E;
+}
+
+.social-media {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 7.64px;
+}
+  
+.social-media > .socialmedia {
+    width: 36px;
+    height: 36px;
+    background-color: var(--blueLighter);
+    /* border: 1px solid; */
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.icon-sosmed {
+    font-size: 23px;
+}
+
+.footer-down{
+    display: flex;
+    background-color: #101728;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
